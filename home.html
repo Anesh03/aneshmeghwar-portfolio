@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anesh Rathore - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: #121212; color: #E0E0E0; text-align: center; }
+        header { background: #1E1E1E; padding: 15px 0; position: fixed; width: 100%; top: 0; box-shadow: 0 4px 10px rgba(0, 255, 209, 0.3); }
+        nav { display: flex; justify-content: center; gap: 20px; }
+        nav a { color: #00FFD1; text-decoration: none; font-size: 18px; transition: 0.3s; cursor: pointer; }
+        nav a:hover { color: #FF1744; }
+        section { padding: 80px 20px; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px; margin: auto; }
+        .card { background: #1E1E1E; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 255, 209, 0.3); width: calc(50% - 20px); text-align: left; transition: transform 0.3s ease-in-out; cursor: pointer; }
+        .card:hover { transform: scale(1.05); }
+        .card h2 { color: #00FFD1; }
+        .btn { display: inline-block; margin-top: 10px; padding: 10px 20px; background: #00FFD1; color: #121212; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #FF1744; color: #FFF; }
+        .profile { text-align: center; margin: 50px 0; }
+        .profile img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #00FFD1; }
+        footer { background: #1E1E1E; padding: 10px; margin-top: 20px; }
+        @media (max-width: 768px) {
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="profile">
+        <img src="data:image/jpeg;base64,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" alt="Anesh Rathore">
+        <h2>Anesh Rathore</h2>
+        <p>I am a passionate Computer Science student at the University of Sindh, 
+            specializing in Python development, mobile applications, and machine learning. 
+            I am also deeply committed to environmental sustainability and tech innovation</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <div class="container">
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <p>Python, Machine Learning, Kotlin, Java, Mobile Application Development, Firebase, SQL, Flutter, Git</p>
+        </section>
+
+        <section id="experience" class="card">
+            <h2>Experience</h2>
+            <p>Developer at IMCS - University of Sindh (Jan 2022 - Present)</p>
+            <p>Python Developer | Mobile Application | Social Media Team | Mentor</p>
+        </section>
+
+        <section id="education" class="card">
+            <h2>Education</h2>
+            <p>BS Computer Science - University of Sindh (2022 - 2025)</p>
+        </section>
+
+        <section id="certifications" class="card">
+            <h2>Certifications</h2>
+            <p>Python for Data Science, AWS Cloud Practitioner, Mobile App Development (Kotlin)</p>
+        </section>
+
+        <section id="activities" class="card" style="width: calc(50% - 20px);">
+            <h2>Activities</h2>
+            <p>Environmental Sustainability Advocate, Community Clean-Up Leader, Volunteer in Tech & Sustainability, Writer for Tech & Culture Publications</p>
+        </section>
+
+        <section id="contact" class="card" style="width: calc(50% - 20px);">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:aneshrathore1@gmail.com">aneshrathore1@gmail.com</a></p>
+            <p>Phone: +92 343 1135155</p>
+            <p>GitHub: <a href="https://github.com/Anesh03" target="_blank">Anesh03</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/anesh-rathore" target="_blank">anesh-rathore</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Anesh Rathore | Software Engineer Portfolio</p>
+    </footer>
+</body>
+</html>
